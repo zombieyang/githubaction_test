@@ -26,7 +26,7 @@ jobs:
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
         with:
           tag_name: '1.0.1'
           release_name: Tag:1.0.1
@@ -39,7 +39,7 @@ jobs:
       - name: release
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: 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
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./log.txt
