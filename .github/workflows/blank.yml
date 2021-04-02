@@ -19,7 +19,10 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: |
+          ls -l
+          echo 'babyQ' > log.txt
+          ls -l
 
       - name: release
         uses: actions/upload-release-asset@v1
