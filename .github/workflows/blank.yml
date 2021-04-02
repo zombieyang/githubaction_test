@@ -4,11 +4,6 @@ name: CI
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  release:
-    types: [created]
-
-  create:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -26,8 +21,12 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: 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
+        with:
+          upload_url: https://uploads.github.com/repos/zombieyang/githubaction_test/releases/40813071/assets
+          asset_path: log.txt
+          asset_name: log.txt
+          asset_content_type: text/plain
