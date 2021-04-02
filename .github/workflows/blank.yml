@@ -27,6 +27,6 @@ jobs:
           GITHUB_TOKEN: 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
         with:
           upload_url: https://uploads.github.com/repos/zombieyang/githubaction_test/releases/40813071/assets
-          asset_path: log.txt
+          asset_path: ./log.txt
           asset_name: log.txt
           asset_content_type: text/plain
