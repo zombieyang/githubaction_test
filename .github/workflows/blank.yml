@@ -34,14 +34,14 @@ jobs:
           prerelease: false
 
       - name: Run a one-line script
-        run: echo '{{ steps.create_release.outputs.upload_url }}'
+        run: echo '${{ steps.create_release.outputs.upload_url }}'
 
       - name: release
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: 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
         with:
-          upload_url: {{ steps.create_release.outputs.upload_url }}
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./log.txt
           asset_name: log.txt
           asset_content_type: text/plain
