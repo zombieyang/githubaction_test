@@ -42,6 +42,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ‘https://uploads.github.com/repos/zombieyang/githubaction_test/releases/40863419/assets{?name,label}’
-          asset_path: ./log.txt
-          asset_name: log.txt
+          asset_path: ./log1.txt
+          asset_name: log1.txt
           asset_content_type: text/plain
