@@ -20,16 +20,28 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          ls -l
           echo 'babyQ' > log.txt
-          ls -l
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: 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
+        with:
+          tag_name: 1.0.1
+          release_name: Tag:1.0.1
+          draft: false
+          prerelease: false
+
+      - name: Run a one-line script
+        run: echo '{{ steps.create_release.outputs.upload_url }}'
 
       - name: release
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: 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
         with:
-          upload_url: https://uploads.github.com/repos/zombieyang/githubaction_test/releases/40813071/assets
+          upload_url: {{ steps.create_release.outputs.upload_url }}
           asset_path: ./log.txt
           asset_name: log.txt
           asset_content_type: text/plain
