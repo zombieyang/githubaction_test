@@ -20,7 +20,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          echo 'babyQQ' > log.txt
+          echo 'babyQQ' > log1.txt
 
       # - name: Create Release
       #   id: create_release
