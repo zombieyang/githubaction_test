@@ -28,7 +28,7 @@ jobs:
         env:
           GITHUB_TOKEN: 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
         with:
-          tag_name: 1.0.1
+          tag_name: '1.0.1'
           release_name: Tag:1.0.1
           draft: false
           prerelease: false
