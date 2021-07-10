@@ -593,6 +593,9 @@
     <Reference Include="Boo.Lang">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.21f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.PerformanceTesting">
+        <HintPath>D:/_WINDOWS_CODE_/githubaction_test/test-project/Library/ScriptAssemblies/Unity.PerformanceTesting.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.TestRunner">
         <HintPath>D:/_WINDOWS_CODE_/githubaction_test/test-project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
