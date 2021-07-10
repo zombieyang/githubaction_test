@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayTests", "PlayTests.csproj", "{f1c9da47-4024-2ca6-cba0-4306f135cd36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests.csproj", "{6148797b-4c13-420f-3325-6e64051018ec}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{f1c9da47-4024-2ca6-cba0-4306f135cd36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f1c9da47-4024-2ca6-cba0-4306f135cd36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6148797b-4c13-420f-3325-6e64051018ec}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6148797b-4c13-420f-3325-6e64051018ec}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
